@@ -1,0 +1,77 @@
+С1)
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int a=0;
+    scanf("%d", &a);
+    printf("%d", abs(a));
+    return 0;
+}
+
+С2)
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int n=0,p=0;
+    scanf("%d", &n);
+    scanf ("%d", &p);
+    printf("%f", pow(n,p));
+    return 0;
+}
+
+C3)
+#include <stdio.h>
+#include <math.h>
+
+int middle(int a, int b){
+    printf ("%f", (a+b)/2.0);
+}
+
+int main()
+{
+    int a=0,b=0;
+    scanf("%d", &a);
+    scanf ("%d", &b);
+    middle(a,b);
+    return 0;
+}
+
+C5)
+#include <stdio.h>
+#include <math.h>
+
+int f(int n, int s){
+    for (int i=1; i<n+1; i++){
+        s += i;
+    }
+    printf ("%d", s);
+}
+
+int main()
+{
+    int n=0, s=0;
+    scanf ("%d", &n);
+    f(n, s);
+    return 0;
+}
+
+C6)
+#include <stdio.h>
+#include <math.h>
+
+int f(int n, int s){
+    s = pow(2, n-1);
+    printf ("%d", s);
+}
+
+int main()
+{
+    int n=0, s=0;
+    scanf ("%d", &n);
+    f(n, s);
+    return 0;
+}
