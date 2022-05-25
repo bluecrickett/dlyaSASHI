@@ -75,3 +75,28 @@ int main()
     f(n, s);
     return 0;
 }
+
+C14)
+#include <stdio.h>
+
+int f(int a, int s){
+    while(a > 0){
+        s += a%10;
+        a = a/10;
+    }
+    if (s%2==0){
+        printf("YES");
+    }
+    else{
+        printf("NO");
+    }
+    
+}
+
+int main()
+{
+    int a=0,s=0;
+    scanf("%d", &a);
+    f(a,s);
+    return 0;
+}
